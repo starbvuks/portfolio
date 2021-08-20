@@ -25,24 +25,6 @@ module.exports = {
         roboto: "Roboto",
         poppins: "Poppins",
       },
-      ringColor: {
-        nav: "#ff8e2b",
-        deepblue: "#152238",
-        lightblue: "#192945",
-      },
-      keyframes: {
-        bounce: {
-          from: {
-            transform: "translateY(0px)",
-          },
-          to: {
-            transform: "translateY(-15px)",
-          },
-        },
-      },
-      animation: {
-        bounce: "wiggle 1s infinite alternate",
-      },
     },
   },
   variants: {
