@@ -1,10 +1,10 @@
 /* eslint-disable react/no-unknown-property */
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar.jsx";
 import Socials from "../components/Socials";
 
 export default function Home() {
   return (
-    <div class="h-full bg-deepblue p-4 pb-28">
+    <div class="h-screen bg-deepblue p-4 pb-28">
       <Navbar />
       <div class="sm:pl-24 md:pl-20 lg:pl-24 sm:pr-28 md:pr-32 mt-20">
         <div class="flex flex-col mx-10 sm:mx-0 sm:flex-row text-center sm:text-left">
