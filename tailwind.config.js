@@ -1,10 +1,9 @@
 module.exports = {
-  purge: ["./src/**/*.js", "./pages/**/*.js", "./components/**/*.js"],
+  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: "media", // or 'media' or 'class'
   theme: {
     extend: {
       backgroundColor: (theme) => ({
-        ...theme("colors"),
         nav: "#ff8e2b",
         navdark: "#B35B0F",
         deepblue: "#152238",
@@ -15,9 +14,9 @@ module.exports = {
         nav: "#ff8e2b",
         lightnav: "#FFE8D4",
       },
-      stroke: (theme) => ({
+      stroke: {
         current: "currentColor",
-      }),
+      },
       fill: {
         current: "currentColor",
       },
