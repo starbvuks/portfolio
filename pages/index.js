@@ -11,13 +11,13 @@ export default function Home() {
   return (
     <div class="h-screen bg-deepblue p-4">
       <Navbar />
-      <div class="pl-24 pr-32 mt-20 h-80 items-center ">
-        <div class="flex flex-col sm:flex-row">
+      <div class="sm:pl-24 md:pl-20 lg:pl-24 sm:pr-28 md:pr-32 mt-20">
+        <div class="flex flex-col mx-8 sm:mx-0 sm:flex-row text-center sm:text-left">
           <div>
             <h3 class="font-poppins text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-blue-50">
               my name's Sarvag
             </h3>
-            <p class="font-poppins pt-14 leading-relaxed text-blue-100 w-full sm:w-10/12 text-sm md:text-lg lg:text-xl">
+            <p class="font-poppins pt-14 leading-relaxed text-blue-100 w-full md:w-10/12 text-sm md:text-lg lg:text-xl">
               i&apos;m a Web Dev living in Hyderabad, India currently balancing
               college and my passion for programming and ui design. Over the
               past year i&apos;ve spent my time taking courses and learning,
@@ -38,13 +38,11 @@ export default function Home() {
               .
             </p>
           </div>
-          <div class="flex items-center">
-            <Image
+          <div class="flex items-center sm:items-start md:items-start">
+            <img
               src="/img/jpg.jpg"
               alt="me"
-              width={750}
-              height={750}
-              class="object-contain shadow-2xl rounded-3xl invisible sm:visible md:w-5/6 sm:h-full"
+              class="object-contain shadow-2xl rounded-3xl invisible sm:visible sm:ml-10 lg:h-3/4"
             />
           </div>
         </div>
