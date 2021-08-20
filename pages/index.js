@@ -2,8 +2,6 @@
 import Navbar from "../components/Navbar";
 import Socials from "../components/Socials";
 
-import "tailwindcss/tailwind.css";
-
 export default function Home() {
   return (
     <div class="h-full bg-deepblue p-4 pb-28">
