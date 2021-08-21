@@ -1,18 +1,19 @@
 import React from "react";
+import Image from "next/image";
 
 const Navbar = () => {
   const btns = ["about", "projects", "contact"];
 
   return (
-    <div class="sm:p-1 mx-5 mt-2 sm:mx-20 flex items-center justify-between">
+    <div class="px-4 mt-2 md:mx-20 flex items-center justify-between">
       <div>
-        <img src="/sk-logo.png" alt="logo" />
+        <img src="/sk-logo.png" alt="logo" class="pr-3 w-10/12 md:w-11/12" />
       </div>
-      <div class="flex gap-9 font-poppins text-lg text-mainRed">
+      <div class="flex gap-3 sm:gap-4 md:gap-9 font-poppins text-sm sm:text-md md:text-lg text-mainRed">
         {btns.map((data, index) => (
           <button
             key={index}
-            class="px-6 py-2 ring-2 font-semibold ring-mainRed rounded-full"
+            class="px-2 sm:px-6 py-2 ring-2 font-semibold ring-mainRed rounded-full"
           >
             {data}
           </button>

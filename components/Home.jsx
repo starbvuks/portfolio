@@ -2,20 +2,20 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div class="flex flex-col text-center items-center py-20">
+    <div class="flex flex-col text-center items-center py-5 sm:py-20">
       <div class="flex flex-col ">
-        <span class="text-7xl leading-loose font-spartan font-bold tracking-tight text-mainRed">
+        <span class="text-3xl sm:text-4xl md:text-6xl lg:text-7xl leading-snug sm:leading-tight py-3 md:py-10 font-spartan font-bold tracking-tight text-mainRed">
           I'm Sarvag Kalari
         </span>
-        <span class="text-5xl font-spartan font-light tracking-tight text-mainRed">
-          front end dev // cse student
+        <span class="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-spartan font-light tracking-tight text-mainRed">
+          front end dev // ui designer
         </span>
       </div>
-      <div class="mt-48 bounce">
+      <div class="mt-20 sm:mt-28 md:mt-48 bounce">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
-          class="fill-backLight stroke-current text-mainRed h-6 w-6"
+          class="fill-backLight stroke-current text-mainRed  h-5 w-5 sm:h-7 sm:w-7"
         >
           <path
             strokeLinecap="round"
