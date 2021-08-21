@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div class="p-4 px-6 mt-2 md:mx-20 flex items-center justify-between">
       <div>
-        <img src="/sk-logo.png" alt="logo" class="pr-3 w-8/12 md:w-11/12" />
+        <img src="/sk-logo.png" alt="logo" class="pr-3 w-7/12 md:w-11/12" />
       </div>
       <div class="flex gap-3 sm:gap-4 md:gap-9 font-poppins text-sm sm:text-md md:text-lg text-mainRed">
         {btns.map((data, index) => (
