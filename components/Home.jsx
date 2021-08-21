@@ -11,7 +11,7 @@ const Home = () => {
           front end dev // ui designer
         </span>
       </div>
-      <div class="mt-20 sm:mt-28 md:mt-48 bounce">
+      <div class="mt-20 hidden sm:block sm:mt-28 md:mt-48 bounce">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
