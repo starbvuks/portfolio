@@ -5,10 +5,9 @@ module.exports = {
     extend: {
       backgroundColor: (theme) => ({
         nav: "#ff8e2b",
-        navdark: "#B35B0F",
         deepblue: "#152238",
         lightblue: "#192945",
-        midblue: "#345691",
+        backLight: "#EDE2DC",
       }),
       textColor: {
         nav: "#ff8e2b",
