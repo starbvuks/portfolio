@@ -13,6 +13,7 @@ module.exports = {
       textColor: {
         mainRed: "#AB3B61",
         mainOrange: "#E57A44",
+        mainBlue: "#587B7F",
         backLight: "#EDE2DC",
       },
       stroke: {
