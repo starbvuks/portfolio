@@ -22,9 +22,13 @@ module.exports = {
       fontFamily: {
         roboto: "Roboto",
         poppins: "Poppins",
+        spartan: "Spartan",
       },
       ringColor: {
         mainRed: "#AB3B61",
+      },
+      fill: {
+        backLight: "#EDE2DC",
       },
     },
   },

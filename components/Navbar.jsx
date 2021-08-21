@@ -1,21 +1,22 @@
 import React from "react";
 
 const Navbar = () => {
+  const btns = ["about", "projects", "contact"];
+
   return (
     <div class="sm:p-1 mx-5 mt-2 sm:mx-20 flex items-center justify-between">
       <div>
         <img src="/sk-logo.png" alt="logo" />
       </div>
       <div class="flex gap-9 font-poppins text-lg text-mainRed">
-        <button class="px-6 py-2 ring-2 ring-mainRed rounded-full">
-          about
-        </button>
-        <button class="px-6 py-2 ring-2 ring-mainRed rounded-full">
-          projects
-        </button>
-        <button class="px-6 py-2 ring-2 ring-mainRed rounded-full">
-          contact
-        </button>
+        {btns.map((data, index) => (
+          <button
+            key={index}
+            class="px-6 py-2 ring-2 font-semibold ring-mainRed rounded-full"
+          >
+            {data}
+          </button>
+        ))}
       </div>
     </div>
   );
