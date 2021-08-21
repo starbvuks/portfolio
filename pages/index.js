@@ -6,9 +6,9 @@ import Socials from "../components/Socials";
 
 export default function Home() {
   return (
-    <div class="h-screen bg-backLight p-4">
+    <div class="h-screen bg-backLight">
       <Navbar />
-      <div class="sm:pl-24 md:pl-20 lg:pl-24 sm:pr-28 md:pr-32 mt-20">
+      <div>
         <Main />
         <Stack />
       </div>

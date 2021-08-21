@@ -14,10 +14,10 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: #000000;
+  background: #ede2dc;
 }
 body::-webkit-scrollbar-thumb {
-  background: #ab3b61;
+  background: #463239;
 }
 
 .bounce {
@@ -40,3 +40,7 @@ body::-webkit-scrollbar-thumb {
     transform: translateY(-15px);
   }
 }
+
+/* nav: "#ff8e2b",
+deepblue: "#152238",
+lightblue: "#192945", */

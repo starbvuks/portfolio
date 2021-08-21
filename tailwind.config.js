@@ -4,14 +4,16 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor: (theme) => ({
-        nav: "#ff8e2b",
-        deepblue: "#152238",
-        lightblue: "#192945",
         backLight: "#EDE2DC",
+        backDark: "#463239",
         mainRed: "#AB3B61",
+        mainOrange: "#E57A44",
+        mainGreen: "#85A190",
       }),
       textColor: {
         mainRed: "#AB3B61",
+        mainOrange: "#E57A44",
+        backLight: "#EDE2DC",
       },
       stroke: {
         current: "currentColor",
