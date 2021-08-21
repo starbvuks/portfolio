@@ -8,10 +8,10 @@ module.exports = {
         deepblue: "#152238",
         lightblue: "#192945",
         backLight: "#EDE2DC",
+        mainRed: "#AB3B61",
       }),
       textColor: {
-        nav: "#ff8e2b",
-        lightnav: "#FFE8D4",
+        mainRed: "#AB3B61",
       },
       stroke: {
         current: "currentColor",
@@ -22,6 +22,9 @@ module.exports = {
       fontFamily: {
         roboto: "Roboto",
         poppins: "Poppins",
+      },
+      ringColor: {
+        mainRed: "#AB3B61",
       },
     },
   },
