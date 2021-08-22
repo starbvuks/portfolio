@@ -33,33 +33,30 @@ const Stack = () => {
           My Stack
         </span>
       </div>
-      <div class="flex w-full gap-20 justify-center px-32 mt-16 z-10">
-        <div class="bg-secondLight w-1/3 h-full rounded-2xl">
-          <div class="flex justify-center items-end py-6 h-5/12 gap-3 shadow">
+      <div class="flex flex-col lg:flex-row lg:w-full lg:gap-20 items-center lg:justify-center lg:px-32 mt-16 z-10">
+        <div class="bg-secondLight w-11/12 lg:w-1/3 h-full rounded-2xl">
+          <div class="flex justify-center items-end py-4 lg:py-6 h-5/12 gap-3 shadow">
             <Icon
               icon="ant-design:code-filled"
-              width="60"
-              height="60"
-              class=""
+              class="w-10 h-10 lg:w-16 lg:h-16"
             />
-            <span class="font-anon text-5xl">main</span>
+            <span class="font-anon text-2xl lg:text-5xl">main</span>
           </div>
-          <ul class="font-spartan font-medium text-mainRed leading-relaxed p-10 text-2xl">
+          <ul class="font-spartan font-medium text-mainRed leading-normal px-12 py-5 lg:p-10 text-md lg:text-2xl lg:leading-relaxed">
             {main.map((data, index) => (
               <li key={index}>{data}</li>
             ))}
           </ul>
         </div>
-        <div class="bg-secondLight w-1/3 h-full rounded-2xl">
-          <div class="flex justify-center items-end py-6 h-5/12 gap-3 shadow">
+        <div class="bg-secondLight w-11/12 mt-10 lg:mt-0 lg:w-1/3 h-full rounded-2xl">
+          <div class="flex justify-center items-end py-4 lg:py-6 h-5/12 gap-3 shadow">
             <Icon
               icon="fluent:window-dev-tools-16-filled"
-              width="68"
-              height="68"
+              class="w-10 h-10 lg:w-16 lg:h-16"
             />
-            <span class="font-anon pb-1 text-5xl">tools</span>
+            <span class="font-anon text-2xl lg:text-5xl lg:pb-1">tools</span>
           </div>
-          <ul class="font-spartan font-medium text-mainRed leading-relaxed p-10 text-2xl">
+          <ul class="font-spartan font-medium text-mainRed leading-normal px-12 py-5 lg:p-10 text-md lg:text-2xl lg:leading-relaxed">
             {tools.map((data, index) => (
               <li key={index}>{data}</li>
             ))}
