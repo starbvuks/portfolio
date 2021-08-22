@@ -9,13 +9,14 @@ module.exports = {
         backDark: "#463239",
         mainRed: "#AB3B61",
         mainOrange: "#E57A44",
-        mainGreen: "#85A190",
+        mainGreen: "#657849",
       }),
       textColor: {
         mainRed: "#AB3B61",
         mainOrange: "#E57A44",
-        mainBlue: "#587B7F",
+        mainGreen: "#657849",
         backLight: "#EDE2DC",
+        backDark: "#463239",
       },
       stroke: {
         current: "currentColor",
