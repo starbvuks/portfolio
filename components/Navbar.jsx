@@ -1,8 +1,23 @@
 import React from "react";
-import Image from "next/image";
+import Link from "next/link";
+import {useRouter} from "next/router";
 
 const Navbar = () => {
-  const btns = ["about", "projects", "contact"];
+  const router = useRouter();
+  const btns = [{name: "about"}, {name: "projects"}, {name: "contact"}];
+
+  const aboutBtn = () => {
+    return router.push("/about");
+  };
+  const projectsBtn = () => {
+    return router.push("/projects");
+  };
+  const contactBtn = () => {
+    return router.push("/contact");
+  };
+  const handleClick = (e) => {
+    return router.push(`/${e}`);
+  };
 
   return (
     <div class="p-4 px-6 mt-2 md:mx-20 flex items-center justify-between">
@@ -13,9 +28,10 @@ const Navbar = () => {
         {btns.map((data, index) => (
           <button
             key={index}
+            onClick={() => handleClick(`${data.name}`)}
             class="px-2 sm:px-6 py-2 ring-2 font-semibold ring-mainRed rounded-full"
           >
-            {data}
+            {data.name}
           </button>
         ))}
       </div>
