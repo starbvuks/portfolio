@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@iconify/react": "^3.0.1",
     "autoprefixer": "9",
     "next": "11.1.0",
     "postcss": "7",

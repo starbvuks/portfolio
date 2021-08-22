@@ -1,6 +1,31 @@
 import React from "react";
+import {Icon} from "@iconify/react";
 
 const Stack = () => {
+  const main = [
+    "React",
+    "Redux",
+    "Next.js",
+    "Tailwind CSS",
+    "Html / Css",
+    "styled-components",
+    "Firebase",
+    "MongoDB",
+    "Express Js",
+  ];
+
+  const tools = [
+    "VS Code",
+    "Figma",
+    "Git",
+    "Github",
+    "Termial",
+    "Heroku",
+    "Vercel",
+    "Photoshop",
+    "Illustrator",
+  ];
+
   return (
     <div class="flex flex-col items-center justify-center lg:justify-center mt-10 pb-20 bg-backDark">
       <div class="p-6 mt-20 lg:pl-0 lg:py-16">
@@ -8,33 +33,41 @@ const Stack = () => {
           My Stack
         </span>
       </div>
-      <div class="flex flex-col items-center lg:flex-row lg:justify-between">
-        <img
-          src="/img/hex3.svg"
-          alt="main-stack"
-          class="w-5/12 p-3 py-6 lg:px-5 lg:w-1/4"
-        />
-        <img
-          src="/img/hex.svg"
-          alt="main-stack"
-          class="w-7/12 p-3 py-6 lg:px-5 lg:w-5/12"
-        />
-        <img
-          src="/img/hex2.svg"
-          alt="main-stack"
-          class="w-5/12 p-3 py-6 lg:px-5 lg:w-1/4"
-        />
+      <div class="flex w-full gap-20 justify-center px-32 mt-16 z-10">
+        <div class="bg-secondLight w-1/3 h-full rounded-2xl">
+          <div class="flex justify-center items-end py-6 h-5/12 gap-3 shadow">
+            <Icon
+              icon="ant-design:code-filled"
+              width="60"
+              height="60"
+              class=""
+            />
+            <span class="font-anon text-5xl">main</span>
+          </div>
+          <ul class="font-spartan font-medium text-mainRed leading-relaxed p-10 text-2xl">
+            {main.map((data, index) => (
+              <li key={index}>{data}</li>
+            ))}
+          </ul>
+        </div>
+        <div class="bg-secondLight w-1/3 h-full rounded-2xl">
+          <div class="flex justify-center items-end py-6 h-5/12 gap-3 shadow">
+            <Icon
+              icon="fluent:window-dev-tools-16-filled"
+              width="68"
+              height="68"
+            />
+            <span class="font-anon pb-1 text-5xl">tools</span>
+          </div>
+          <ul class="font-spartan font-medium text-mainRed leading-relaxed p-10 text-2xl">
+            {tools.map((data, index) => (
+              <li key={index}>{data}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );
 };
 
 export default Stack;
-
-{
-  /* <ul class="mt-10 list-outside list-disc font-spartan font-semibold text-mainBlue text-4xl leading-loose hidden lg:block">
-<li>React</li>
-<li>Redux</li>
-<li>Tailwind</li>
-</ul> */
-}

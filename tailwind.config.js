@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       backgroundColor: (theme) => ({
         backLight: "#EDE2DC",
+        secondLight: "#F6EEE9",
         backDark: "#463239",
         mainRed: "#AB3B61",
         mainOrange: "#E57A44",
@@ -26,6 +27,7 @@ module.exports = {
         roboto: "Roboto",
         poppins: "Poppins",
         spartan: "Spartan",
+        anon: "Anonymous Pro",
       },
       ringColor: {
         mainRed: "#AB3B61",
@@ -33,6 +35,12 @@ module.exports = {
       fill: {
         backLight: "#EDE2DC",
       },
+      rotate: {
+        "-35": "35deg",
+      },
+      backgroundImage: (theme) => ({
+        watercolor: "url('/img/watercolor.png')",
+      }),
     },
   },
   variants: {
