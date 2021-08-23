@@ -6,10 +6,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-body {
-  background-color: #ede2dc;
-}
-
 img {
   user-drag: none;
   user-select: none;

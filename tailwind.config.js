@@ -6,7 +6,8 @@ module.exports = {
       backgroundColor: (theme) => ({
         backLight: "#EDE2DC",
         secondLight: "#F6EEE9",
-        backDark: "#463239",
+        aboutBlue: "#152238",
+        aboutLight: "#E8F0FF",
         mainRed: "#AB3B61",
         mainOrange: "#E57A44",
         mainGreen: "#657849",
@@ -17,6 +18,7 @@ module.exports = {
         mainGreen: "#657849",
         backLight: "#EDE2DC",
         backDark: "#463239",
+        aboutLight: "#E8F0FF",
       },
       stroke: {
         current: "currentColor",
@@ -32,6 +34,7 @@ module.exports = {
       },
       ringColor: {
         mainRed: "#AB3B61",
+        aboutLight: "#E8F0FF",
       },
       fill: {
         backLight: "#EDE2DC",
