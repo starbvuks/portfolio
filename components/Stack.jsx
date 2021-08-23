@@ -27,8 +27,8 @@ const Stack = () => {
   ];
 
   return (
-    <div class="flex flex-col items-center justify-center py-20">
-      <div class="flex flex-col items-center justify-center bg-backLight w-3/4 py-5 lg:py-20 rounded-3xl shadow-2x">
+    <div class="flex flex-col w-full items-center bg-backLight justify-center py-20">
+      <div class="flex flex-col items-center justify-center w-3/4 py-5 lg:py-20 rounded-3xl shadow-2x">
         <div class="flex flex-col lg:flex-row lg:w-full lg:gap-20 items-center lg:justify-center lg:px-20">
           <div class="bg-secondLight w-10/12 lg:w-5/12 h-full rounded-2xl">
             <div class="flex items-center py-4 lg:px-12 lg:py-6 h-5/12 gap-3 shadow-md">

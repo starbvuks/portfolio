@@ -6,7 +6,7 @@ import {Icon} from "@iconify/react";
 
 const about = () => {
   return (
-    <div class="transition-all duration-500 ease-in-out h-screen bg-aboutBlue">
+    <div class="h-screen bg-aboutBlue">
       <Navbar />
       <div class="flex flex-col px-20 pt-28">
         <span class="font-spartan font-extrabold text-9xl bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-indigo-200">
