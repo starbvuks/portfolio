@@ -27,9 +27,9 @@ const Stack = () => {
   ];
 
   return (
-    <div class="flex flex-col lg:flex-row lg:w-full lg:gap-20 items-center lg:justify-center px-20 py-16">
-      <div class="bg-aboutBlue2 h-full w-1/2 rounded-2xl">
-        <div class="flex items-center py-4 lg:px-12 lg:py-6 gap-3 shadow-md">
+    <div class="flex flex-col lg:flex-row w-full sm:gap-20 items-center sm:justify-center px-0 sm:px-20 py-16">
+      <div class="bg-aboutBlue2 h-full w-2/3 sm:w-1/2 rounded-2xl">
+        <div class="flex items-center py-6 px-12 gap-3 shadow-md">
           <div class="w-9 h-9">
             <Icon
               icon="ant-design:code-filled"
@@ -48,8 +48,8 @@ const Stack = () => {
           ))}
         </ul>
       </div>
-      <div class="bg-aboutBlue2 mt-10 lg:mt-0 h-full w-1/2 rounded-2xl">
-        <div class="flex items-center py-4 lg:px-12 lg:py-6 gap-3 shadow-md">
+      <div class="mt-10 sm:mt-0 bg-aboutBlue2 h-full w-2/3 sm:w-1/2 rounded-2xl">
+        <div class="flex items-center py-6 px-12 gap-3 shadow-md">
           <div class="w-9 h-9">
             <Icon icon="bi:tools" color="#4ebfab" width="full" height="full" />
           </div>
