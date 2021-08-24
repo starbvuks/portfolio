@@ -27,8 +27,11 @@ const Stack = () => {
   ];
 
   return (
-    <div class="flex flex-col lg:flex-row w-full sm:gap-20 items-center sm:justify-center px-0 sm:px-20 py-16">
-      <div class="bg-aboutBlue2 h-full w-2/3 sm:w-1/2 rounded-2xl">
+    <div class="flex flex-col lg:flex-row w-full sm:gap-12 items-center sm:justify-center  px-0 sm:px-20 sm:pt-12">
+      <span class="font-spartan font-bold text-aboutLight text-2xl text-center mb-7 rounded-2xl block sm:hidden">
+        Stack
+      </span>
+      <div class="bg-aboutBlue2 h-full w-3/4 sm:w-1/2 rounded-2xl">
         <div class="flex items-center py-6 px-12 gap-3 shadow-md">
           <div class="w-9 h-9">
             <Icon
@@ -39,7 +42,7 @@ const Stack = () => {
             />
           </div>
           <span class="font-anon text-aboutTurq text-2xl lg:text-4xl">
-            main
+            languages
           </span>
         </div>
         <ul class="font-spartan font-medium text-aboutSky leading-normal px-12 py-5 lg:p-10 text-md lg:text-2xl lg:leading-relaxed">
@@ -48,7 +51,7 @@ const Stack = () => {
           ))}
         </ul>
       </div>
-      <div class="mt-10 sm:mt-0 bg-aboutBlue2 h-full w-2/3 sm:w-1/2 rounded-2xl">
+      <div class="mt-10 sm:mt-0 bg-aboutBlue2 h-full w-3/4 sm:w-1/2 rounded-2xl">
         <div class="flex items-center py-6 px-12 gap-3 shadow-md">
           <div class="w-9 h-9">
             <Icon icon="bi:tools" color="#4ebfab" width="full" height="full" />

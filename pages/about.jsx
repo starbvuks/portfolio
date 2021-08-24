@@ -9,7 +9,7 @@ const about = () => {
   return (
     <div class="h-full bg-aboutBlue pb-36">
       <Navbar />
-      <div class="flex flex-col items-center mx-30 lg:mx-40 2xl:mx-72 pt-28">
+      <div class="flex flex-col items-center mx-30 pt-28 lg:mx-40 2xl:mx-72">
         <div class="flex flex-col sm:flex-row items-center gap-10">
           <img src="/img/me.jpg" alt="me" class="w-52 h-52 rounded-xl" />
           <div class="flex flex-col items-center sm:items-start sm:pl-10 font-spartan tracking-tight">
@@ -24,7 +24,7 @@ const about = () => {
             </span>
           </div>
         </div>
-        <div class="w-2/3 sm:w-10/12 bg-aboutBlue2 font-poppins text-aboutLight text-md sm:text-xl p-14 rounded-2xl mt-16 sm:mt-28">
+        <div class="w-3/4 sm:w-10/12 bg-aboutBlue2 font-poppins text-aboutLight text-sm sm:text-xl p-14 rounded-2xl mt-16 sm:mt-28">
           <p>
             i’m a Web Dev living in Hyderabad, India currently balancing college
             and my passion for programming and ui design.
@@ -51,6 +51,7 @@ const about = () => {
             .
           </p>
         </div>
+        <div class="w-3/4 h-1 my-10 bg-aboutBlue2 rounded-full block sm:hidden"></div>
         <Stack />
       </div>
     </div>
