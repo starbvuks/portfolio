@@ -17,8 +17,12 @@ img {
   -o-user-select: none;
 }
 
+body {
+  background-color: #ede2dc;
+}
+
 body::-webkit-scrollbar {
-  width: 0.5rem;
+  width: 0.25rem;
 }
 
 body::-webkit-scrollbar-track {

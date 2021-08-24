@@ -7,10 +7,9 @@ import {motion} from "framer-motion";
 
 export default function Home() {
   return (
-    <div class="h-screen bg-backLight">
+    <div class="h-auto bg-backLight">
       <Navbar />
-      <Main />
-      <Stack />
+        <Main />
     </div>
   );
 }

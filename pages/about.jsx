@@ -9,7 +9,7 @@ const about = () => {
   return (
     <div class="h-full bg-aboutBlue pb-36">
       <Navbar />
-      <div class="flex flex-col items-center mx-40 2xl:mx-72 pt-36">
+      <div class="flex flex-col items-center mx-40 2xl:mx-72 pt-28">
         <div class="flex items-center">
           <img src="/img/me.jpg" alt="me" class="w-52 h-52 rounded-xl" />
           <div class="flex flex-col pl-10 font-spartan tracking-tight">
@@ -51,6 +51,7 @@ const about = () => {
             .
           </p>
         </div>
+        <Stack />
       </div>
     </div>
   );
