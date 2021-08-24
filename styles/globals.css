@@ -17,6 +17,12 @@ img {
   -o-user-select: none;
 }
 
+a,
+button,
+img {
+  -webkit-tap-highlight-color: transparent;
+}
+
 body {
   background-color: #ede2dc;
 }
