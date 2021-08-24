@@ -4,12 +4,15 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor: (theme) => ({
+        mainRed: "#AB3B61",
         backLight: "#EDE2DC",
         secondLight: "#F6EEE9",
         aboutBlue: "#152238",
         aboutBlue2: "#192945",
         aboutTurq: "#4EBFAB",
-        mainRed: "#AB3B61",
+        portfGreen: "#657849",
+        portfLightGreen: "#BAB78C",
+
       }),
       textColor: {
         mainRed: "#AB3B61",
@@ -19,6 +22,9 @@ module.exports = {
         aboutGray: "#8892B0",
         aboutSky: "#6AAEF3",
         aboutTurq: "#4EBFAB",
+        portfLight: "#F3EFE3",
+        portfDark: "#54543A",
+        portfBtnLight: "#B1B495"
       },
       stroke: {
         current: "currentColor",
@@ -35,6 +41,7 @@ module.exports = {
       ringColor: {
         mainRed: "#AB3B61",
         aboutLight: "#E8F0FF",
+        portfBtnLight: "#B1B495"
       },
       fill: {
         backLight: "#EDE2DC",
