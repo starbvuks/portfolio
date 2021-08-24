@@ -32,10 +32,10 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: #ede2dc;
+  background: #2d2a32;
 }
 body::-webkit-scrollbar-thumb {
-  background: #ab3b61;
+  background: #f7f7ff;
 }
 
 .bounce {

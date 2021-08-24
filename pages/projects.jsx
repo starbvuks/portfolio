@@ -25,14 +25,14 @@ const projects = () => {
       </div>
       <div class="w-full flex flex-col flex-wrap sm:flex-row items-center my-20 sm:mx-28 gap-7">
         {projects.map((data, index) => (
-          <div
+          <button
             key={index}
-            class="flex bg-portfLightGreen items-end justify-center rounded-2xl mt-9 p-5 h-64 w-11/12 sm:w-1/4"
+            class="flex bg-portfLightGreen items-end justify-center shadow-md rounded-2xl mt-9 p-5 h-64 w-11/12 sm:w-1/4"
           >
             <span class="text-center font-spartan font-bold text-2xl text-portfDark">
               {data}
             </span>
-          </div>
+          </button>
         ))}
       </div>
     </div>
