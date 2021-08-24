@@ -10,7 +10,7 @@ const about = () => {
     <div class="h-full bg-aboutBlue pb-36">
       <Navbar />
       <div class="flex flex-col items-center mx-40 2xl:mx-72 pt-28">
-        <div class="flex items-center">
+        <div class="flex items-center gap-10">
           <img src="/img/me.jpg" alt="me" class="w-52 h-52 rounded-xl" />
           <div class="flex flex-col pl-10 font-spartan tracking-tight">
             <span class="font-extrabold text-aboutLight text-4xl">
@@ -18,8 +18,8 @@ const about = () => {
             </span>
             <span class="flex items-center font-semibold text-aboutGray text-3xl pt-3 gap-7">
               I make websites with
-              <div class="inline-block animate-spin">
-                <Icon icon="logos:react" width="95" height="95" />
+              <div class="inline-block animate-spin w-24 h-24">
+                <Icon icon="logos:react" width="full" height="full" />
               </div>
             </span>
           </div>

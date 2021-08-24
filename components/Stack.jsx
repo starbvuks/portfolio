@@ -30,7 +30,14 @@ const Stack = () => {
     <div class="flex flex-col lg:flex-row lg:w-full lg:gap-20 items-center lg:justify-center px-20 py-16">
       <div class="bg-aboutBlue2 h-full w-1/2 rounded-2xl">
         <div class="flex items-center py-4 lg:px-12 lg:py-6 gap-3 shadow-md">
-          <Icon icon="ant-design:code-filled" color="#4ebfab" class="w-7 h-7" />
+          <div class="w-9 h-9">
+            <Icon
+              icon="ant-design:code-filled"
+              color="#4ebfab"
+              width="full"
+              height="full"
+            />
+          </div>
           <span class="font-anon text-aboutTurq text-2xl lg:text-4xl">
             main
           </span>
@@ -43,7 +50,9 @@ const Stack = () => {
       </div>
       <div class="bg-aboutBlue2 mt-10 lg:mt-0 h-full w-1/2 rounded-2xl">
         <div class="flex items-center py-4 lg:px-12 lg:py-6 gap-3 shadow-md">
-          <Icon icon="bi:tools" color="#4ebfab" class="w-7 h-7" />
+          <div class="w-9 h-9">
+            <Icon icon="bi:tools" color="#4ebfab" width="full" height="full" />
+          </div>
           <span class="font-anon text-aboutTurq text-2xl lg:text-4xl">
             tools
           </span>

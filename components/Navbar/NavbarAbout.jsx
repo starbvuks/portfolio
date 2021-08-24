@@ -1,17 +1,17 @@
 import React from "react";
 import Link from "next/link";
-import {useRouter} from "next/router";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const router = useRouter();
-  const btns = [{name: "about"}, {name: "projects"}, {name: "contact"}];
+  const btns = [{ name: "about" }, { name: "projects" }, { name: "contact" }];
 
   const handleClick = (e) => {
     return router.push(`/${e}`);
   };
 
   return (
-    <div class="p-4 px-6 pt-4 md:mx-20 flex items-center justify-between">
+    <div class="p-4 px-6 pt-6 md:mx-20 flex items-center justify-between">
       <div>
         <Link href="/" passHref={true}>
           <a>
