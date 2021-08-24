@@ -7,18 +7,18 @@ module.exports = {
         backLight: "#EDE2DC",
         secondLight: "#F6EEE9",
         aboutBlue: "#152238",
-        aboutLight: "#E8F0FF",
+        aboutBlue2: "#192945",
+        aboutTurq: "#4EBFAB",
         mainRed: "#AB3B61",
-        mainOrange: "#E57A44",
-        mainGreen: "#657849",
       }),
       textColor: {
         mainRed: "#AB3B61",
-        mainOrange: "#E57A44",
-        mainGreen: "#657849",
         backLight: "#EDE2DC",
         backDark: "#463239",
-        aboutLight: "#E8F0FF",
+        aboutLight: "#CCD6F6",
+        aboutGray: "#8892B0",
+        aboutSkyBlue: "#6AAEF3",
+        aboutTurq: "#4EBFAB",
       },
       stroke: {
         current: "currentColor",
@@ -38,9 +38,8 @@ module.exports = {
       },
       fill: {
         backLight: "#EDE2DC",
-      },
-      rotate: {
-        "-35": "35deg",
+        aboutTurq: "#4EBFAB",
+
       },
       backgroundImage: (theme) => ({
         watercolor: "url('/img/watercolor.png')",
