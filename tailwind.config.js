@@ -17,7 +17,7 @@ module.exports = {
         backDark: "#463239",
         aboutLight: "#CCD6F6",
         aboutGray: "#8892B0",
-        aboutSkyBlue: "#6AAEF3",
+        aboutSky: "#6AAEF3",
         aboutTurq: "#4EBFAB",
       },
       stroke: {
