@@ -19,7 +19,7 @@ const Stack = () => {
     "Figma",
     "Git",
     "Github",
-    "Termial",
+    "Terminal",
     "Heroku",
     "Vercel",
     "Photoshop",

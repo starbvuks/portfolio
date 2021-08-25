@@ -1,9 +1,15 @@
-import React from "react";
+import { useEffect } from "react";
 import Navbar from "../components/Navbar/NavbarPortf";
+
+import getProjects from "../utils/projects.js";
 
 const projects = () => {
   const langs = ["react", "next js", "material-ui", "tailwind css"];
   const projects = ["My Movie Database", "Landmark Locator", "Congo Store"];
+
+  useEffect(() => {
+    getProjects();
+  });
 
   return (
     <div class="h-full bg-portfGreen pb-10 2xl:pb-44 overflow-hidden">
