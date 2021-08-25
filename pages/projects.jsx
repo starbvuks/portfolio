@@ -21,7 +21,7 @@ const projects = () => {
   }, []);
 
   return (
-    <div class="h-full bg-portfGreen pb-10 2xl:pb-44 overflow-hidden">
+    <div class="h-full bg-portfGreen pb-10 lg:pb-16 2xl:pb-44 overflow-hidden">
       <Navbar />
       <div class="mt-28 mx-6 sm:mx-28">
         <span class="font-anon text-portfLight text-4xl sm:text-7xl">
@@ -47,10 +47,10 @@ const projects = () => {
             >
               <div class="relative">
                 <div class=" flex flex-col items-center justify-center absolute inset-0 opacity-0 hover:opacity-100 duration-200 hover:bg-portfLightGreen rounded-2xl">
-                  <span class="font-spartan font-bold text-2xl text-portfDark mb-3">
+                  <span class="font-spartan font-bold mt-3 text-xl sm:text-2xl text-portfDark mb-3">
                     {data.name}
                   </span>
-                  <span class="font-spartan font-normal text-lg text-portfDark mb-14">
+                  <span class="font-spartan font-normal text-md sm:text-lg text-portfDark mb-10 sm:mb-14">
                     {data.description}
                   </span>
                   <div class="w-8 h-8">
