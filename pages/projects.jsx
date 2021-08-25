@@ -27,7 +27,7 @@ const projects = () => {
         <span class="font-anon text-portfLight text-4xl sm:text-7xl">
           things i’ve made
         </span>
-        <div class="flex text-portfBtnLight gap-5 font-spartan text-sm sm:text-md mt-7">
+        <div class="flex flex-wrap flex-grow text-portfBtnLight gap-5 font-spartan text-sm sm:text-md mt-7">
           {langs.map((data, index) => (
             <button
               key={index}
@@ -43,7 +43,7 @@ const projects = () => {
           projectData.map((data, index) => (
             <button
               key={index}
-              class=" bg-portfLightGreen shadow-md rounded-2xl mt-9 w-3/4 sm:w-1/4 transform hover:scale-110 duration-300"
+              class=" bg-portfLightGreen shadow-xl rounded-2xl mt-9 w-3/4 sm:w-1/4 transform hover:scale-110 duration-300"
             >
               <div class="relative">
                 <div class=" flex flex-col items-center justify-center absolute inset-0 opacity-0 hover:opacity-100 duration-200 hover:bg-portfLightGreen rounded-2xl">
@@ -53,7 +53,7 @@ const projects = () => {
                   <span class="font-spartan font-normal text-md sm:text-lg text-portfDark mb-10 sm:mb-14">
                     {data.description}
                   </span>
-                  <div class="w-8 h-8">
+                  <div class="w-8 h-8 mb-3">
                     <a href="https://landmark-locator.vercel.app/">
                       <Icon
                         icon="akar-icons:github-fill"
