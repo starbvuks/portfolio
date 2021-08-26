@@ -12,17 +12,15 @@ const Navbar = () => {
 
   return (
     <div class="p-4 px-6 pt-6 md:mx-20 flex items-center justify-between">
-      <div>
-        <Link href="/" passHref={true}>
-          <a>
-            <img
-              src="/sk-logo-portfolio.png"
-              alt="logo"
-              class="pr-3 w-7/12 md:w-11/12"
-            />
-          </a>
-        </Link>
-      </div>
+      <Link href="/" passHref={true}>
+        <a>
+          <img
+            src="/sk-logo-portfolio.png"
+            alt="logo"
+            class="pr-3 w-7/12 md:w-11/12"
+          />
+        </a>
+      </Link>
       <div class="flex gap-3 sm:gap-4 md:gap-9 font-poppins text-sm sm:text-md md:text-lg text-portfLight">
         {btns.map((data, index) => (
           <button
