@@ -8,7 +8,7 @@ import { MoonLoader } from "react-spinners";
 const override = css`
   display: absolute;
   position: fixed;
-  left: 45%;
+  left: 47%;
   top: 45%;
 `;
 

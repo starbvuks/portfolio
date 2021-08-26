@@ -17,6 +17,10 @@ img {
   -o-user-select: none;
 }
 
+body {
+  background-color: #ede2dc;
+}
+
 a,
 button,
 img {
