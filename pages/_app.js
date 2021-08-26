@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { MoonLoader } from "react-spinners";
 
 const override = css`
-  display: block;
+  display: absolute;
   position: fixed;
   left: 45%;
   top: 45%;
@@ -14,6 +14,21 @@ const override = css`
 
 function MyApp({ Component, pageProps, router }) {
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const handleStart = () => {
+      setLoading(true);
+    };
+    const handleComplete = () => {
+      setTimeout(() => {
+        setLoading(false);
+      }, 1000);
+    };
+
+    router.events.on("routeChangeStart", handleStart);
+    router.events.on("routeChangeComplete", handleComplete);
+    router.events.on("routeChangeError", handleComplete);
+  }, [router]);
 
   useEffect(() => {
     setLoading(true);
@@ -24,6 +39,10 @@ function MyApp({ Component, pageProps, router }) {
 
   return (
     <>
+      <Head>
+        <title>SarvagK Portfolio </title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       {loading ? (
         <MoonLoader
           css={override}
@@ -33,10 +52,6 @@ function MyApp({ Component, pageProps, router }) {
         />
       ) : (
         <>
-          <Head>
-            <title>SarvagK Portfolio </title>
-            <link rel="icon" href="/favicon.ico" />
-          </Head>
           <AnimatePresence exitBeforeEnter>
             <motion.div
               key={router.route}
