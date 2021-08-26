@@ -12,6 +12,7 @@ module.exports = {
         aboutTurq: "#4EBFAB",
         portfGreen: "#657849",
         portfLightGreen: "#BAB78C",
+        contactBack: "#788585",
       }),
       textColor: {
         mainRed: "#AB3B61",
@@ -24,6 +25,7 @@ module.exports = {
         portfLight: "#F3EFE3",
         portfDark: "#54543A",
         portfBtnLight: "#B1B495",
+        contactLight: "#CCDAD1",
       },
       stroke: {
         current: "currentColor",
@@ -41,6 +43,7 @@ module.exports = {
         mainRed: "#AB3B61",
         aboutLight: "#E8F0FF",
         portfBtnLight: "#B1B495",
+        contactLight: "#CCDAD1",
       },
       fill: {
         backLight: "#EDE2DC",
