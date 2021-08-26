@@ -61,31 +61,33 @@ const projects = () => {
               ))}
             </div>
           </div>
-          <div class="w-full flex flex-col flex-wrap sm:flex-row items-center my-20 sm:mx-28 gap-12">
+          <div class="w-full sm:w-10/12 flex flex-col flex-wrap sm:flex-row items-center my-20 sm:mx-28 gap-12">
             {projectData.length > 0 &&
               projectData.map((data, index) => (
                 <button
                   key={index}
-                  class=" bg-portfLightGreen shadow-xl rounded-2xl mt-9 w-3/4 sm:w-1/4 transform hover:scale-110 duration-300"
+                  class=" bg-portfLightGreen shadow-xl rounded-2xl mt-9 w-3/4 sm:w-1/3 transform hover:scale-110 duration-300"
                 >
                   <div class="relative">
                     <div class=" flex flex-col items-center justify-center absolute inset-0 opacity-0 hover:opacity-100 duration-200 hover:bg-portfLightGreen rounded-2xl">
-                      <span class="font-spartan font-bold mt-3 text-xl sm:text-2xl text-portfDark mb-3">
+                      <span class="font-spartan font-bold mt-3 text-lg sm:text-2xl text-portfDark mb-3">
                         {data.name}
                       </span>
                       <span class="font-spartan font-normal text-md sm:text-lg text-portfDark">
                         {data.description}
                       </span>
-                      {data.category.map((langs, index) => (
-                        <span
-                          key={index}
-                          class="flex font-spartan font-normal text-md sm:text-lg text-portfDark"
-                        >
-                          {langs}
-                        </span>
-                      ))}
-                      <div class="w-8 h-8 mb-3">
+                      <div key={index} class="flex flex-row gap-3 mt-6 mb-3">
+                        {data.category.map((langs, index) => (
+                          <span class="font-spartan font-semibold text-xs sm:text-sm text-portfBtnLight bg-portfGreen rounded-md sm:rounded-xl p-1.5 sm:p-2">
+                            {langs}
+                          </span>
+                        ))}
+                      </div>
+                      <div class="flex gap-3 w-16 h-16">
                         <a href="https://landmark-locator.vercel.app/">
+                          <Icon icon="entypo:link" width="full" height="full" />
+                        </a>
+                        <a href="https://github.com/starbvuks/portfolio">
                           <Icon
                             icon="akar-icons:github-fill"
                             width="full"

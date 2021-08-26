@@ -12,7 +12,6 @@ module.exports = {
         aboutTurq: "#4EBFAB",
         portfGreen: "#657849",
         portfLightGreen: "#BAB78C",
-
       }),
       textColor: {
         mainRed: "#AB3B61",
@@ -24,7 +23,7 @@ module.exports = {
         aboutTurq: "#4EBFAB",
         portfLight: "#F3EFE3",
         portfDark: "#54543A",
-        portfBtnLight: "#B1B495"
+        portfBtnLight: "#B1B495",
       },
       stroke: {
         current: "currentColor",
@@ -41,12 +40,11 @@ module.exports = {
       ringColor: {
         mainRed: "#AB3B61",
         aboutLight: "#E8F0FF",
-        portfBtnLight: "#B1B495"
+        portfBtnLight: "#B1B495",
       },
       fill: {
         backLight: "#EDE2DC",
         aboutTurq: "#4EBFAB",
-
       },
       backgroundImage: (theme) => ({
         watercolor: "url('/img/watercolor.png')",
