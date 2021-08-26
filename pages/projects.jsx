@@ -76,6 +76,14 @@ const projects = () => {
                       <span class="font-spartan font-normal text-md sm:text-lg text-portfDark mb-10 sm:mb-14">
                         {data.description}
                       </span>
+                      {data.category.map((langs, index) => (
+                        <span
+                          key={index}
+                          class="flex font-spartan font-normal text-md sm:text-lg text-portfDark sm:mb-14"
+                        >
+                          {langs}
+                        </span>
+                      ))}
                       <div class="w-8 h-8 mb-3">
                         <a href="https://landmark-locator.vercel.app/">
                           <Icon
