@@ -44,7 +44,7 @@ const projects = () => {
           color="#AB3B61"
         />
       ) : (
-        <div class="h-full bg-portfGreen pb-10 lg:pb-16 2xl:pb-44 overflow-hidden">
+        <div class="h-full bg-portfGreen pb-10 lg:pb-16 2xl:pb-44">
           <Navbar />
           <div class="mt-28 mx-6 sm:mx-28">
             <span class="font-anon text-portfLight text-4xl sm:text-7xl">
@@ -73,13 +73,13 @@ const projects = () => {
                       <span class="font-spartan font-bold mt-3 text-xl sm:text-2xl text-portfDark mb-3">
                         {data.name}
                       </span>
-                      <span class="font-spartan font-normal text-md sm:text-lg text-portfDark mb-10 sm:mb-14">
+                      <span class="font-spartan font-normal text-md sm:text-lg text-portfDark">
                         {data.description}
                       </span>
                       {data.category.map((langs, index) => (
                         <span
                           key={index}
-                          class="flex font-spartan font-normal text-md sm:text-lg text-portfDark sm:mb-14"
+                          class="flex font-spartan font-normal text-md sm:text-lg text-portfDark"
                         >
                           {langs}
                         </span>

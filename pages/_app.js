@@ -30,12 +30,12 @@ function MyApp({ Component, pageProps, router }) {
     router.events.on("routeChangeError", handleComplete);
   }, [router]);
 
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 1500);
-  }, []);
+  // useEffect(() => {
+  //   setLoading(true);
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 1500);
+  // }, []);
 
   return (
     <>

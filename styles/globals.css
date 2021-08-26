@@ -23,10 +23,6 @@ img {
   -webkit-tap-highlight-color: transparent;
 }
 
-body {
-  background-color: #ede2dc;
-}
-
 body::-webkit-scrollbar {
   width: 0.25rem;
 }
