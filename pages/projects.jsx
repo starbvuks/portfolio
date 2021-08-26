@@ -70,20 +70,20 @@ const projects = () => {
                 >
                   <div class="relative">
                     <div class=" flex flex-col items-center justify-center absolute inset-0 opacity-0 hover:opacity-100 duration-200 hover:bg-portfLightGreen rounded-2xl">
-                      <span class="font-spartan font-bold mt-3 text-lg sm:text-2xl text-portfDark mb-3">
+                      <span class="font-spartan font-bold text-lg sm:text-xl text-portfDark mt-3 sm:mt-5 mb-3 sm:mb-0">
                         {data.name}
                       </span>
                       <span class="font-spartan font-normal text-md sm:text-lg text-portfDark">
                         {data.description}
                       </span>
-                      <div key={index} class="flex flex-row gap-3 mt-6 mb-3">
+                      <div key={index} class="flex flex-row gap-3 mt-6 mb-2">
                         {data.category.map((langs, index) => (
-                          <span class="font-spartan font-semibold text-xs sm:text-sm text-portfBtnLight bg-portfGreen rounded-md sm:rounded-xl p-1.5 sm:p-2">
+                          <span class="font-spartan font-semibold text-xs text-portfBtnLight bg-portfGreen rounded-md sm:rounded-xl p-1.5 sm:p-2">
                             {langs}
                           </span>
                         ))}
                       </div>
-                      <div class="flex gap-3 w-16 h-16">
+                      <div class="flex gap-3 w-20 h-20">
                         <a href="https://landmark-locator.vercel.app/">
                           <Icon icon="entypo:link" width="full" height="full" />
                         </a>
