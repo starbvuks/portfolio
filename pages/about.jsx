@@ -10,15 +10,19 @@ const about = () => {
     <div class="h-full bg-aboutBlue pb-36">
       <Navbar />
       <div class="flex flex-col items-center mx-30 pt-28 lg:mx-40 2xl:mx-72">
-        <div class="flex flex-col sm:flex-row items-center gap-10">
-          <img src="/img/me.jpg" alt="me" class="w-52 h-52 rounded-xl" />
-          <div class="flex flex-col items-center sm:items-start sm:pl-10 font-spartan tracking-tight">
-            <span class="font-extrabold text-aboutLight text-2xl sm:text-4xl">
+        <div class="flex flex-col sm:flex-row items-center gap-10 lg:gap-3">
+          <img
+            src="/img/me.jpg"
+            alt="me"
+            class="w-52 h-52 lg:w-44 lg:h-44 xl:w-52 xl:h-52 rounded-xl"
+          />
+          <div class="flex flex-col items-center sm:items-start sm:pl-10 lg:pl-3 xl:pl-10 font-spartan tracking-tight">
+            <span class="font-extrabold text-aboutLight text-2xl sm:text-4xl lg:text-3xl xl:text-4xl">
               my name is Sarvag Kalari
             </span>
-            <span class="flex items-center font-semibold text-aboutGray text-lg sm:text-3xl pt-3 gap-4 sm:gap-7">
+            <span class="flex items-center font-semibold text-aboutGray text-lg sm:text-3xl lg:text-xl xl:text-3xl pt-3 gap-4 sm:gap-7">
               I make websites with
-              <div class="inline-block animate-spin w-10 h-10 sm:w-24 sm:h-24">
+              <div class="inline-block animate-spin w-10 h-10 sm:w-24 sm:h-24 lg:w-14 lg:h-14 xl:w-24 xl:h-24">
                 <Icon icon="logos:react" width="full" height="full" />
               </div>
             </span>
