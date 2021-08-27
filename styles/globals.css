@@ -18,7 +18,7 @@ img {
 }
 
 body {
-  background-color: #657849;
+  background-color: #ede2dc;
 }
 
 a,
@@ -41,11 +41,6 @@ body::-webkit-scrollbar-thumb {
 .bounce {
   animation: bounce 1s infinite alternate;
   -webkit-animation: bounce 1s infinite alternate;
-}
-
-.basket {
-  transition: opacity 0.5s;
-  opacity: 1;
 }
 
 @keyframes bounce {

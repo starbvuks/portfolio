@@ -30,13 +30,6 @@ function MyApp({ Component, pageProps, router }) {
     router.events.on("routeChangeError", handleComplete);
   }, [router]);
 
-  // useEffect(() => {
-  //   setLoading(true);
-  //   setTimeout(() => {
-  //     setLoading(false);
-  //   }, 1500);
-  // }, []);
-
   return (
     <>
       <Head>
@@ -48,7 +41,7 @@ function MyApp({ Component, pageProps, router }) {
           css={override}
           loading={loading}
           size={50}
-          color="#F3EFE3"
+          color="#AB3B61"
         />
       ) : (
         <>

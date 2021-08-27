@@ -1,26 +1,28 @@
 import { useState, useEffect } from "react";
 import { Icon } from "@iconify/react";
 import Navbar from "../components/Navbar/NavbarPortf";
+import { motion } from "framer-motion";
 
 import { collection, getDocs } from "firebase/firestore/lite";
 import db from "../utils/firebase.js";
 
-const projects = () => {
+export const getStaticProps = async () => {
+  const projCol = collection(db, "projects");
+  const projSnapshot = await getDocs(projCol);
+  const projList = projSnapshot.docs.map((doc) => doc.data());
+
+  return {
+    props: { projs: projList },
+  };
+};
+
+const projects = ({ projs }) => {
   const [projectData, setProjectData] = useState([]);
+  useEffect(() => {
+    setProjectData(projs);
+  }, []);
 
   const langs = ["react", "next js", "material-ui", "tailwind css"];
-
-  async function getProj(db) {
-    const projCol = collection(db, "projects");
-    const projSnapshot = await getDocs(projCol);
-    const projList = projSnapshot.docs.map((doc) => doc.data());
-    setProjectData(projList);
-    return projList;
-  }
-
-  useEffect(() => {
-    getProj(db);
-  }, []);
 
   return (
     <div class="h-full bg-portfGreen pb-10 md:pb-28 lg:pb-16 2xl:pb-44">
@@ -45,7 +47,7 @@ const projects = () => {
           projectData.map((data, index) => (
             <button
               key={index}
-              className=" bg-portfLightGreen shadow-xl rounded-2xl mt-9 w-3/4 md:w-1/3 transform hover:scale-110 duration-300 proj"
+              className="bg-portfLightGreen shadow-xl rounded-2xl mt-9 w-3/4 md:w-1/3 transform hover:scale-110 duration-300"
             >
               <div class="relative">
                 <div class=" flex flex-col items-center justify-center absolute inset-0 opacity-0 hover:opacity-100 duration-200 hover:bg-portfLightGreen rounded-2xl">
