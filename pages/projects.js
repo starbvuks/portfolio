@@ -2,24 +2,24 @@ import { useState, useEffect } from "react";
 import { Icon } from "@iconify/react";
 import Navbar from "../components/Navbar/NavbarPortf";
 
-import firebase from "../utils/firebase.js";
+import { collection, getDocs } from "firebase/firestore/lite";
+import db from "../utils/firebase.js";
 
 const projects = () => {
   const [projectData, setProjectData] = useState([]);
 
   const langs = ["react", "next js", "material-ui", "tailwind css"];
 
-  const fetchData = () => {
-    const db = firebase.firestore();
-    db.collection("projects").onSnapshot((snapshot) => {
-      let proj = [];
-      proj = snapshot.docs.map((doc) => doc.data());
-      setProjectData(proj);
-    });
-  };
+  async function getProj(db) {
+    const projCol = collection(db, "projects");
+    const projSnapshot = await getDocs(projCol);
+    const projList = projSnapshot.docs.map((doc) => doc.data());
+    setProjectData(projList);
+    return projList;
+  }
 
   useEffect(() => {
-    fetchData();
+    getProj(db);
   }, []);
 
   return (
@@ -60,20 +60,23 @@ const projects = () => {
                     class="flex flex-row gap-3 mt-3 xl:mt-6 mb-2"
                   >
                     {data.category.map((langs, index) => (
-                      <span class="font-spartan font-semibold text-xs text-portfBtnLight bg-portfGreen rounded-md md:rounded-xl p-2 md:p-1.5 lg:p-2">
+                      <span
+                        key={index}
+                        class="font-spartan font-semibold text-xs text-portfBtnLight bg-portfGreen rounded-md md:rounded-xl p-2 md:p-1.5 lg:p-2"
+                      >
                         {langs}
                       </span>
                     ))}
                   </div>
                   <div class="flex gap-3 w-20 h-20 md:w-16 md:h-16 xl:w-20 xl:h-20">
                     <a href={data.siteLink}>
-                      <Icon icon="entypo:link" width="full" height="full" />
+                      <Icon icon="entypo:link" width="100%" height="100%" />
                     </a>
                     <a href={data.gitLink}>
                       <Icon
                         icon="akar-icons:github-fill"
-                        width="full"
-                        height="full"
+                        width="100%"
+                        height="100%"
                       />
                     </a>
                   </div>

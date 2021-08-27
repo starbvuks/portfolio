@@ -48,7 +48,7 @@ function MyApp({ Component, pageProps, router }) {
           css={override}
           loading={loading}
           size={50}
-          color="#AB3B61"
+          color="#F3EFE3"
         />
       ) : (
         <>

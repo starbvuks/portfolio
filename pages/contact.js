@@ -62,7 +62,7 @@ const contact = () => {
                 name="message"
                 rows="3"
                 placeholder="anything you'd like to tell me"
-                class="bg-contactBack2 form-input shadow-sm mt-1 rounded-md font-spartan text-gray-800"
+                className="bg-contactBack2 form-input shadow-sm mt-1 rounded-md font-spartan text-gray-800"
               />
             </div>
 

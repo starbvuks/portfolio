@@ -1,9 +1,8 @@
-import firebase from "firebase/app";
+import { initializeApp } from "firebase/app";
 import "firebase/auth";
 import "firebase/database";
 import "firebase/firestore";
-
-import Axios from "axios";
+import { getFirestore } from "firebase/firestore/lite";
 
 var firebaseConfig = {
   apiKey: "AIzaSyDel6_dqHwLvVCDLIsXBMDdy8KxFnWF2-I",
@@ -14,8 +13,7 @@ var firebaseConfig = {
   appId: "1:343608240535:web:bddd917c90e14e5c81bcd2",
 };
 
-if (!firebase.apps.length) {
-  firebase.initializeApp(firebaseConfig);
-}
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 
-export default firebase;
+export default db;
