@@ -34,6 +34,14 @@ function MyApp({ Component, pageProps, router }) {
     <>
       <Head>
         <title>SarvagK Portfolio </title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="Sarvag Kalari's Portfolio" />
+        <meta
+          name="keywords"
+          content="React, Web Dev, Next,, Javascript, Html, Css"
+        />
+        <meta name="theme-color" content="#AB3B61" />
+        <meta name="author" content="Sarvag Kalari" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {loading ? (

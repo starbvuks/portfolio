@@ -29,7 +29,7 @@ const contact = () => {
   return (
     <div class="h-screen bg-contactBack">
       <Navbar />
-      <div class="flex flex-col items-center mt-40 md:t-20">
+      <div class="flex flex-col items-center mt-40 md:mt-20">
         <div class="flex">
           <form onSubmit={sendEmail} class="w-80">
             <div class="flex flex-col">
