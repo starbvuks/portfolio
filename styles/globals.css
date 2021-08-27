@@ -42,6 +42,12 @@ body::-webkit-scrollbar-thumb {
   animation: bounce 1s infinite alternate;
   -webkit-animation: bounce 1s infinite alternate;
 }
+
+.basket {
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+
 @keyframes bounce {
   from {
     transform: translateY(0px);

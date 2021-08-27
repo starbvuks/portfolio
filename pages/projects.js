@@ -45,7 +45,7 @@ const projects = () => {
           projectData.map((data, index) => (
             <button
               key={index}
-              class=" bg-portfLightGreen shadow-xl rounded-2xl mt-9 w-3/4 md:w-1/3 transform hover:scale-110 duration-300"
+              className=" bg-portfLightGreen shadow-xl rounded-2xl mt-9 w-3/4 md:w-1/3 transform hover:scale-110 duration-300 proj"
             >
               <div class="relative">
                 <div class=" flex flex-col items-center justify-center absolute inset-0 opacity-0 hover:opacity-100 duration-200 hover:bg-portfLightGreen rounded-2xl">
