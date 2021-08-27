@@ -34,6 +34,8 @@ module.exports = {
       },
       fill: {
         current: "currentColor",
+        backLight: "#EDE2DC",
+        aboutTurq: "#4EBFAB",
       },
       fontFamily: {
         roboto: "Roboto",
@@ -49,10 +51,6 @@ module.exports = {
       },
       borderColor: {
         contactLight: "#CCDAD1",
-      },
-      fill: {
-        backLight: "#EDE2DC",
-        aboutTurq: "#4EBFAB",
       },
       backgroundImage: (theme) => ({
         watercolor: "url('/img/watercolor.png')",

@@ -1,5 +1,7 @@
 import React from "react";
 import emailjs from "emailjs-com";
+import { Icon } from "@iconify/react";
+
 import Navbar from "../components/Navbar/NavbarContact";
 
 const contact = () => {
@@ -27,7 +29,7 @@ const contact = () => {
   return (
     <div class="h-screen bg-contactBack">
       <Navbar />
-      <div class="flex flex-col items-center mt-20">
+      <div class="flex flex-col items-center mt-40 md:t-20">
         <div class="flex">
           <form onSubmit={sendEmail} class="w-80">
             <div class="flex flex-col">
@@ -66,11 +68,35 @@ const contact = () => {
               />
             </div>
 
-            <input
-              type="submit"
-              value="Send"
-              class="bg-contactBack2 font-poppins font-semibold text-contactLight px-5 py-2 mt-6 rounded-lg"
-            />
+            <div class="flex justify-between mt-6">
+              <input
+                type="submit"
+                value="Send"
+                class="bg-contactBack2 font-poppins font-semibold text-contactLight px-5 py-2 rounded-lg"
+              />
+              <div class="flex items-end gap-5">
+                <div class="w-9 h-9">
+                  <a href="https://www.linkedin.com/in/sarvag-kalari-000346000/">
+                    <Icon
+                      icon="akar-icons:linkedin-fill"
+                      width="100%"
+                      height="100%"
+                      color="#CCDAD1"
+                    />
+                  </a>
+                </div>
+                <div class="w-9 h-9">
+                  <a href="https://github.com/starbvuks">
+                    <Icon
+                      icon="akar-icons:github-fill"
+                      width="100%"
+                      height="100%"
+                      color="#CCDAD1"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
           </form>
         </div>
       </div>

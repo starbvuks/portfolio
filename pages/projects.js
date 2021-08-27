@@ -45,9 +45,18 @@ const projects = ({ projs }) => {
       <div class="w-full md:w-10/12 flex flex-col flex-wrap md:flex-row items-center my-20 md:mx-28 gap-5 sm:gap-12">
         {projectData.length > 0 &&
           projectData.map((data, index) => (
-            <button
+            <motion.button
               key={index}
               className="bg-portfLightGreen shadow-xl rounded-2xl mt-9 w-3/4 md:w-1/3 transform hover:scale-110 duration-300"
+              animate={{
+                y: -20,
+                opacity: 1,
+              }}
+              whileHover={{ scale: 1.1 }}
+              transition={{
+                type: "spring",
+                stiffness: 100,
+              }}
             >
               <div class="relative">
                 <div class=" flex flex-col items-center justify-center absolute inset-0 opacity-0 hover:opacity-100 duration-200 hover:bg-portfLightGreen rounded-2xl">
@@ -89,7 +98,7 @@ const projects = ({ projs }) => {
                   class="rounded-2xl object-cover"
                 />
               </div>
-            </button>
+            </motion.button>
           ))}
       </div>
     </div>
