@@ -13,6 +13,7 @@ module.exports = {
         portfGreen: "#657849",
         portfLightGreen: "#BAB78C",
         contactBack: "#788585",
+        contactBack2: "#9CAEA9",
       }),
       textColor: {
         mainRed: "#AB3B61",
@@ -26,6 +27,7 @@ module.exports = {
         portfDark: "#54543A",
         portfBtnLight: "#B1B495",
         contactLight: "#CCDAD1",
+        contactBack: "#788585",
       },
       stroke: {
         current: "currentColor",
@@ -45,6 +47,9 @@ module.exports = {
         portfBtnLight: "#B1B495",
         contactLight: "#CCDAD1",
       },
+      borderColor: {
+        contactLight: "#CCDAD1",
+      },
       fill: {
         backLight: "#EDE2DC",
         aboutTurq: "#4EBFAB",
@@ -57,5 +62,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
