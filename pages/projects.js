@@ -17,29 +17,30 @@ export const getStaticProps = async () => {
 };
 
 const projects = ({ projs }) => {
-  const langs = ["react", "next js", "material-ui", "tailwind css", "firebase"];
-  // const langs = [...projectData.map((proj) => proj.category[])];
+  const langs = [
+    "all",
+    "react",
+    "next js",
+    "material-ui",
+    "tailwind css",
+    "firebase",
+  ];
 
   const [projectData, setProjectData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
   const [category, setCategory] = useState("");
 
-  // const categ = projs.forEach(function (res) {
-  //   const main = res.category;
-  //   if (main === category) {
-  //     setProjectData()
-  //   }
-  // });
-
-  // console.log(categ);
   useEffect(() => {
     setProjectData(projs);
-  }, [filteredData]);
+  }, []);
+
+  useEffect(() => {
+    setFilteredData(projectData.filter((data) => data.category === category));
+  }, [category, projectData]);
 
   const handleCategory = (res) => {
-    setCategory(res.data);
-    setFilteredData(projs.filter((data) => data.category === category));
-    // const filter = projectData.filter((data) => data.category === category);
+    const data = res.data;
+    setCategory(data);
   };
 
   return (
@@ -62,7 +63,7 @@ const projects = ({ projs }) => {
         </div>
       </div>
       <div class="w-full md:w-10/12 flex flex-col flex-wrap md:flex-row items-center my-20 md:mx-28 gap-5 sm:gap-12">
-        {filteredData.length > 0
+        {filteredData.length > 0 && category !== "all"
           ? filteredData.length > 0 &&
             filteredData.map((data, index) => (
               <motion.button
