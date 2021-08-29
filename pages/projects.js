@@ -30,12 +30,16 @@ const projects = ({ projs }) => {
   const [filteredData, setFilteredData] = useState([]);
   const [category, setCategory] = useState("");
 
+  const categ = [];
+
   useEffect(() => {
     setProjectData(projs);
   }, []);
 
   useEffect(() => {
-    setFilteredData(projectData.filter((data) => data.category === category));
+    setFilteredData(
+      projectData.filter((data) => data.category.includes(category))
+    );
   }, [category, projectData]);
 
   const handleCategory = (res) => {
@@ -91,14 +95,14 @@ const projects = ({ projs }) => {
                       key={index}
                       class="flex flex-row gap-3 mt-3 xl:mt-6 mb-2"
                     >
-                      {/* {data.category.map((langs, index) => ( */}
-                      <span
-                        key={index}
-                        class="font-spartan font-semibold text-xs text-portfBtnLight bg-portfGreen rounded-md md:rounded-xl p-2 md:p-1.5 lg:p-2"
-                      >
-                        {data.category}
-                      </span>
-                      {/* ))} */}
+                      {data.category.map((langs, index) => (
+                        <span
+                          key={index}
+                          class="font-spartan font-semibold text-xs text-portfBtnLight bg-portfGreen rounded-md md:rounded-xl p-2 md:p-1.5 lg:p-2"
+                        >
+                          {langs}
+                        </span>
+                      ))}
                     </div>
                     <div class="flex gap-3 w-20 h-20 md:w-16 md:h-16 xl:w-20 xl:h-20">
                       <a href={data.siteLink}>
@@ -148,14 +152,14 @@ const projects = ({ projs }) => {
                       key={index}
                       class="flex flex-row gap-3 mt-3 xl:mt-6 mb-2"
                     >
-                      {/* {data.category.map((langs, index) => ( */}
-                      <span
-                        key={index}
-                        class="font-spartan font-semibold text-xs text-portfBtnLight bg-portfGreen rounded-md md:rounded-xl p-2 md:p-1.5 lg:p-2"
-                      >
-                        {data.category}
-                      </span>
-                      {/* ))} */}
+                      {data.category.map((langs, index) => (
+                        <span
+                          key={index}
+                          class="font-spartan font-semibold text-xs text-portfBtnLight bg-portfGreen rounded-md md:rounded-xl p-2 md:p-1.5 lg:p-2"
+                        >
+                          {langs}
+                        </span>
+                      ))}
                     </div>
                     <div class="flex gap-3 w-20 h-20 md:w-16 md:h-16 xl:w-20 xl:h-20">
                       <a href={data.siteLink}>
