@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 
 import { collection, getDocs } from "firebase/firestore/lite";
 import db from "../utils/firebase.js";
+import ProjectCards from "../components/ProjCards";
 
 export const getStaticProps = async () => {
   const projCol = collection(db, "projects");
@@ -29,8 +30,6 @@ const projects = ({ projs }) => {
   const [projectData, setProjectData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
   const [category, setCategory] = useState("");
-
-  const categ = [];
 
   useEffect(() => {
     setProjectData(projs);
@@ -70,117 +69,11 @@ const projects = ({ projs }) => {
         {filteredData.length > 0 && category !== "all"
           ? filteredData.length > 0 &&
             filteredData.map((data, index) => (
-              <motion.button
-                key={index}
-                className="bg-portfLightGreen shadow-xl rounded-2xl mt-9 w-3/4 md:w-1/3 transform hover:scale-110 duration-300"
-                animate={{
-                  y: -20,
-                  opacity: 1,
-                }}
-                whileHover={{ scale: 1.1 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 100,
-                }}
-              >
-                <div class="relative">
-                  <div class=" flex flex-col items-center justify-center absolute inset-0 opacity-0 hover:opacity-100 duration-200 hover:bg-portfLightGreen rounded-2xl">
-                    <span class="font-spartan font-bold text-2xl md:text-base xl:text-xl text-portfDark mt-3 md:mt-1.5 xl:mt-5 mb-3 md:mb-0 xl:mb-2">
-                      {data.name}
-                    </span>
-                    <span class="hidden xl:block font-spartan font-normal text-lg text-portfDark">
-                      {data.description}
-                    </span>
-                    <div
-                      key={index}
-                      class="flex flex-row gap-3 mt-3 xl:mt-6 mb-2"
-                    >
-                      {data.category.map((langs, index) => (
-                        <span
-                          key={index}
-                          class="font-spartan font-semibold text-xs text-portfBtnLight bg-portfGreen rounded-md md:rounded-xl p-2 md:p-1.5 lg:p-2"
-                        >
-                          {langs}
-                        </span>
-                      ))}
-                    </div>
-                    <div class="flex gap-3 w-20 h-20 md:w-16 md:h-16 xl:w-20 xl:h-20">
-                      <a href={data.siteLink}>
-                        <Icon icon="entypo:link" width="100%" height="100%" />
-                      </a>
-                      <a href={data.gitLink}>
-                        <Icon
-                          icon="akar-icons:github-fill"
-                          width="100%"
-                          height="100%"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                  <img
-                    src={data.image}
-                    alt="preview"
-                    class="rounded-2xl object-cover"
-                  />
-                </div>
-              </motion.button>
+              <ProjectCards data={data} index={index} />
             ))
           : projectData.length > 0 &&
             projectData.map((data, index) => (
-              <motion.button
-                key={index}
-                className="bg-portfLightGreen shadow-xl rounded-2xl mt-9 w-3/4 md:w-1/3 transform hover:scale-110 duration-300"
-                animate={{
-                  y: -20,
-                  opacity: 1,
-                }}
-                whileHover={{ scale: 1.1 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 100,
-                }}
-              >
-                <div class="relative">
-                  <div class=" flex flex-col items-center justify-center absolute inset-0 opacity-0 hover:opacity-100 duration-200 hover:bg-portfLightGreen rounded-2xl">
-                    <span class="font-spartan font-bold text-2xl md:text-base xl:text-xl text-portfDark mt-3 md:mt-1.5 xl:mt-5 mb-3 md:mb-0 xl:mb-2">
-                      {data.name}
-                    </span>
-                    <span class="hidden xl:block font-spartan font-normal text-lg text-portfDark">
-                      {data.description}
-                    </span>
-                    <div
-                      key={index}
-                      class="flex flex-row gap-3 mt-3 xl:mt-6 mb-2"
-                    >
-                      {data.category.map((langs, index) => (
-                        <span
-                          key={index}
-                          class="font-spartan font-semibold text-xs text-portfBtnLight bg-portfGreen rounded-md md:rounded-xl p-2 md:p-1.5 lg:p-2"
-                        >
-                          {langs}
-                        </span>
-                      ))}
-                    </div>
-                    <div class="flex gap-3 w-20 h-20 md:w-16 md:h-16 xl:w-20 xl:h-20">
-                      <a href={data.siteLink}>
-                        <Icon icon="entypo:link" width="100%" height="100%" />
-                      </a>
-                      <a href={data.gitLink}>
-                        <Icon
-                          icon="akar-icons:github-fill"
-                          width="100%"
-                          height="100%"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                  <img
-                    src={data.image}
-                    alt="preview"
-                    class="rounded-2xl object-cover"
-                  />
-                </div>
-              </motion.button>
+              <ProjectCards data={data} index={index} />
             ))}
       </div>
     </div>
