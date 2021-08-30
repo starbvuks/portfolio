@@ -5,12 +5,7 @@ import Head from "next/head";
 import { AnimatePresence, motion } from "framer-motion";
 import { MoonLoader } from "react-spinners";
 
-const override = css`
-  display: absolute;
-  position: fixed;
-  left: 45%;
-  top: 45%;
-`;
+const override = css``;
 
 function MyApp({ Component, pageProps, router }) {
   const [loading, setLoading] = useState(false);
@@ -45,12 +40,14 @@ function MyApp({ Component, pageProps, router }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {loading ? (
-        <MoonLoader
-          css={override}
-          loading={loading}
-          size={50}
-          color="#AB3B61"
-        />
+        <div class="flex h-screen items-center justify-center">
+          <MoonLoader
+            css={override}
+            loading={loading}
+            size={50}
+            color="#AB3B61"
+          />
+        </div>
       ) : (
         <>
           <AnimatePresence exitBeforeEnter>
