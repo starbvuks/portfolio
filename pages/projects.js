@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
-import { Icon } from "@iconify/react";
 import Navbar from "../components/Navbar/NavbarPortf";
-import { motion } from "framer-motion";
 
 import { collection, getDocs } from "firebase/firestore/lite";
 import db from "../utils/firebase.js";
@@ -47,7 +45,7 @@ const projects = ({ projs }) => {
   };
 
   return (
-    <div class="h-full bg-portfGreen pb-10 md:pb-28 lg:pb-16 2xl:pb-44">
+    <div class="h-screen md:h-screen bg-portfGreen pb-28 md:pb-28 lg:pb-16 xl:pb-32 2xl:pb-44">
       <Navbar />
       <div class="mt-28 mx-6 sm:mx-28">
         <span class="font-anon text-portfLight text-4xl sm:text-7xl">
@@ -65,7 +63,7 @@ const projects = ({ projs }) => {
           ))}
         </div>
       </div>
-      <div class="w-full md:w-10/12 flex flex-col flex-wrap md:flex-row items-center my-20 md:mx-28 gap-5 sm:gap-12">
+      <div class="w-full h-full sm:h-auto bg-portfGreen md:w-10/12 flex flex-col flex-wrap md:flex-row items-center mt-16 md:mx-28 gap-5 sm:gap-12">
         {filteredData.length > 0 && category !== "all"
           ? filteredData.length > 0 &&
             filteredData.map((data, index) => (

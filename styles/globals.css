@@ -17,6 +17,11 @@ img {
   -o-user-select: none;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   background-color: #ede2dc;
 }

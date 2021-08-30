@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div class="h-screen bg-backLight">
       <Navbar />
-      <div class="flex flex-col text-center items-center p-4 pt-64 sm:pt-32 lg:pt-40 xl:pt-48 2xl:pt-72">
+      <div class="flex flex-col text-center items-center p-4 pt-64 sm:pt-32 lg:pt-40 xl:pt-44 2xl:pt-64">
         <div class="flex flex-col">
           <span class="text-3xl sm:text-4xl md:text-6xl xl:text-7xl py-3 md:py-8 font-spartan font-bold tracking-tight text-mainRed">
             I'm Sarvag Kalari
