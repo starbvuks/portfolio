@@ -38,6 +38,13 @@ function MyApp({ Component, pageProps, router }) {
         <meta name="theme-color" content="#AB3B61" />
         <meta name="author" content="Sarvag Kalari" />
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:image" content="/img/sk-logo-portfolio.png" />
+        <meta property="og:title" content="Sarvag Kalari's Portfolio" />
+        <meta
+          property="og:url"
+          content="https://portfolio-starbvuks.vercel.app/"
+        />
+        <meta property="og:type" content="website" />
       </Head>
       {loading ? (
         <div class="flex h-screen items-center justify-center">
