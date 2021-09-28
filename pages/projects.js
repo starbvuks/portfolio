@@ -16,14 +16,8 @@ export const getStaticProps = async () => {
 };
 
 const projects = ({ projs }) => {
-  const langs = [
-    "all",
-    "react",
-    "next js",
-    "material-ui",
-    "tailwind css",
-    "firebase",
-  ];
+  const langs = ["all", "react", "material-ui", "firebase"];
+  // next js, tailwind css
 
   const [projectData, setProjectData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);

@@ -29,7 +29,7 @@ const ProjCards = (props) => {
             {props.data.category.map((langs, index) => (
               <span
                 key={index}
-                class="font-spartan font-semibold text-xs text-portfBtnLight bg-portfGreen rounded-md md:rounded-xl p-2 md:p-1.5 lg:p-2"
+                class="font-spartan font-semibold text-xs text-portfBtnLight bg-portfGreen rounded-md md:rounded-xl p-2 md:p-2"
               >
                 {langs}
               </span>
