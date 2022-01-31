@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps, router }) {
         <meta name="description" content="Sarvag Kalari's Portfolio" />
         <meta
           name="keywords"
-          content="React, Web Dev, Next,, Javascript, Html, Css"
+          content="React, Web Dev, Next, Javascript, Html, Css"
         />
         <meta name="theme-color" content="#AB3B61" />
         <meta name="author" content="Sarvag Kalari" />
