@@ -11,6 +11,7 @@ module.exports = {
         aboutBlue2: "#192945",
         aboutTurq: "#4EBFAB",
         portfGreen: "#657849",
+        portfLight: "#F3EFE3",
         portfLightGreen: "#BAB78C",
         contactBack: "#788585",
         contactBack2: "#9CAEA9",

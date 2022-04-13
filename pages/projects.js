@@ -69,7 +69,7 @@ const projects = ({ projs }) => {
               <ProjectCards data={data} index={index} />
             ))}
       </div>
-      <ThisProj />
+      {/* <ThisProj /> */}
     </div>
   );
 };
