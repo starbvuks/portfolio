@@ -12,7 +12,7 @@ const Home = () => {
             I'm Sarvag Kalari
           </span>
           <span class="text-xl sm:text-3xl md:text-4xl xl:text-5xl font-spartan font-light tracking-tight text-mainRed">
-            front end dev // ui designer
+            full stack dev // ui designer
           </span>
         </div>
       </div>

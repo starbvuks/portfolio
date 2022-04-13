@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar/NavbarPortf";
 import { collection, getDocs } from "firebase/firestore/lite";
 import db from "../utils/firebase.js";
 import ProjectCards from "../components/ProjCards";
+import ThisProj from "../components/ThisProj";
 
 export const getStaticProps = async () => {
   const projCol = collection(db, "projects");
@@ -68,6 +69,7 @@ const projects = ({ projs }) => {
               <ProjectCards data={data} index={index} />
             ))}
       </div>
+      <ThisProj />
     </div>
   );
 };

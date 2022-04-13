@@ -14,9 +14,9 @@ const about = () => {
           <img
             src="/img/me.jpg"
             alt="me"
-            class="w-52 h-52 lg:w-44 lg:h-44 lg:w-48 lg:h-48 xl:w-60 xl:h-60 rounded-xl"
+            class="w-52 h-52 lg:w-48 lg:h-48 xl:w-60 xl:h-60 rounded-xl"
           />
-          <div class="flex flex-col items-center sm:items-start sm:pl-10 lg:pl-3 xl:pl-10 font-spartan tracking-tight">
+          <div class="flex flex-col items-center sm:items-start sm:pl-3 lg:pl-3 xl:pl-10 font-spartan tracking-tight">
             <span class="font-extrabold text-aboutLight text-2xl sm:text-4xl lg:text-3xl xl:text-4xl">
               my name is Sarvag Kalari
             </span>
@@ -28,7 +28,7 @@ const about = () => {
             </span>
           </div>
         </div>
-        <div class="w-3/4 sm:w-10/12 bg-aboutBlue2 font-poppins text-aboutLight text-sm sm:text-xl p-14 rounded-2xl mt-16 sm:mt-28 lg:mt-20 xl:mt-24">
+        <div class="w-3/4 sm:w-10/12 2xl:w-3/5 bg-aboutBlue2 font-poppins text-aboutLight text-sm sm:text-xl p-14 rounded-2xl mt-16 sm:mt-28 lg:mt-20 xl:mt-18">
           <p>
             i’m a Web Dev living in Hyderabad, India currently balancing college
             and my passion for programming and ui design.
