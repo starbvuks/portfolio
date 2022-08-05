@@ -20,6 +20,7 @@ module.exports = {
       }),
       textColor: {
         mainRed: "#AB3B61",
+        backLight: "#EDE2DC",
         backDark: "#463239",
         aboutBlue: "#152238",
         aboutLight: "#CCD6F6",
