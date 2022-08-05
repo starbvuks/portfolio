@@ -21,8 +21,27 @@ const Navbar = () => {
           />
         </a>
       </Link>
-      <div class="flex gap-3 sm:gap-4 md:gap-9 font-poppins text-sm sm:text-md md:text-lg text-aboutLight">
-        {btns.map((data, index) => (
+      <div class="flex gap-3 sm:gap-4 md:gap-9 font-poppins text-sm sm:text-md md:text-lg">
+        <button
+          onClick={() => handleClick(`about`)}
+          class="px-2 sm:px-6 py-2 ring-2 font-semibold transition ease-in-out delay-150 ring-aboutLight hover:bg-aboutLight text-aboutLight hover:text-aboutBlue rounded-full"
+        >
+          about
+        </button>
+        <button
+          onClick={() => handleClick(`projects`)}
+          class="px-2 sm:px-6 py-2 ring-2 font-semibold transition ease-in-out delay-150 ring-aboutLight hover:bg-aboutLight text-aboutLight hover:text-aboutBlue rounded-full"
+        >
+          projects
+        </button>
+        <button
+          onClick={() => handleClick(`contact`)}
+          class="px-2 sm:px-6 py-2 ring-2 font-semibold transition ease-in-out delay-150 ring-aboutLight hover:bg-aboutLight text-aboutLight hover:text-aboutBlue rounded-full"
+        >
+          contact
+        </button>
+      </div>
+      {/* {btns.map((data, index) => (
           <button
             key={index}
             onClick={() => handleClick(`${data.name}`)}
@@ -30,8 +49,7 @@ const Navbar = () => {
           >
             {data.name}
           </button>
-        ))}
-      </div>
+        ))} */}
     </div>
   );
 };
