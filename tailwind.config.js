@@ -53,6 +53,7 @@ module.exports = {
         portfLight: "#F3EFE3",
         portfBtnLight: "#B1B495",
         contactLight: "#CCDAD1",
+        contactBack2: "#9CAEA9",
       },
       borderColor: {
         contactLight: "#CCDAD1",

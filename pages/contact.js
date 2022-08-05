@@ -69,14 +69,18 @@ const contact = () => {
             </div>
 
             <div class="flex justify-between mt-6">
-              <input
+              <button
                 type="submit"
-                value="Send"
-                class="bg-contactBack2 font-poppins font-semibold text-contactLight px-5 py-2 rounded-lg"
-              />
+                class="bg-contactBack ring-2 ring-contactBack2 font-poppins font-semibold text-contactLight px-5 py-2 rounded-xl transition ease-in-out delay-150 hover:bg-contactBack2"
+              >
+                Send
+              </button>
               <div class="flex items-end gap-5">
                 <div class="w-9 h-9">
-                  <a href="https://www.linkedin.com/in/sarvag-kalari-000346000/">
+                  <a
+                    class="hover:opacity-50 transition ease-in-out delay-100 hover:scale-110"
+                    href="https://www.linkedin.com/in/sarvag-kalari-000346000/"
+                  >
                     <Icon
                       icon="akar-icons:linkedin-fill"
                       width="100%"
@@ -86,7 +90,10 @@ const contact = () => {
                   </a>
                 </div>
                 <div class="w-9 h-9">
-                  <a href="https://github.com/starbvuks">
+                  <a
+                    href="https://github.com/starbvuks"
+                    class="hover:opacity-50 transition ease-in-out delay-100 hover:scale-110"
+                  >
                     <Icon
                       icon="akar-icons:github-fill"
                       width="100%"
