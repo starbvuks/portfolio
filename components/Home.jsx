@@ -14,6 +14,9 @@ const Home = () => {
           <span class="text-xl sm:text-3xl md:text-4xl xl:text-5xl font-spartan font-light tracking-tight text-mainRed">
             full stack dev // ui designer
           </span>
+          <span class="text-base sm:text-lg md:text-lg xl:text-xl font-spartan font-light tracking-tight text-yellow-700 mt-5 lg:mt-10">
+            (note: Sarvag from 2024 here - this portfolio is outdated, working on my new one as you read this !)
+          </span>
         </div>
       </div>
     </div>
